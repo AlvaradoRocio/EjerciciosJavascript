@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <script>
+        var distancia;
+        var medio1 = 'pie';
+        var medio2 = 'bicicleta';
+        var medio3 = 'colectivo';
+        var medio4 = 'auto';
+        var medio5 = 'avion';
+
+        distancia = prompt('Ingrese una distancia: ', '');
+        if (distancia >= 0 && distancia <= 1000) {
+            document.write('El medio de transporte adecuado es ' + medio1);
+        } else {
+            if (distancia > 1000 && distancia <= 10000) {
+                document.write('El medio de transporte adecuado es ' + medio2);
+            } else {
+                if (distancia > 10000 && distancia <= 30000) {
+                    document.write('El medio de transporte adecuado es ' + medio3);
+                } else {
+                    if (distancia > 30000 && distancia <= 100000) {
+                        document.write('El medio de transporte adecuado es ' + medio4);
+                    } else {
+                        if (distancia > 100000) {
+                            document.write('El medio de transporte adecuado es ' + medio5);
+                        }
+                    }
+
+                }
+            }
+        }
+    </script>
+</body>
+</html>
